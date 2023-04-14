@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+main{
+    display: inline-block;
+    margin: 2%;
+    padding: 15px;
+    position: relative;
+}
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #0074D9, #FFFFFF);
+    min-height: 100vh;
+}
+
+.pokedex {
+    max-width: 830px;
+}
+
+.pokemon__image {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    position: absolute;
+    bottom: 55%;
+    left: 27%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+  
+.pokemon__data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 55%;
+    right: 60%;
+    font-size: clamp(8px, 5vw, 25px);
+}
+  
+.pokemon_name {
+    color: #3a444d;
+    text-transform: capitalize;
+}
+  
+.form {
+    position: absolute;
+    width: 35%;
+    top: 65%;
+    left: 7.7%;
+}
+  
+.input__search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
+}
+  
+.buttons {
+    position: absolute;
+    bottom: 11.1%;
+    left: 45%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 73px;
+}
+  
+.button {
+    width: 20%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+  
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+
+.poke-desc {
+    display: flex;
+    position: absolute;
+    justify-content: left;
+    
+    padding: 10px;
+    bottom: 51%;
+    left: 57.3%;
+    padding: 1px;
+    font-size: 18px;
+    width: 280px;
+    height: 100px;
+    color: #aaa;
+    font-weight: 450;
+}
+
+.poke-types div{
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+.poke-types {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    padding-left: 35px;
+    padding-right: 40px;
+    width: 280px;
+    height: 45px;
+    bottom: 11%;
+    left: 57.3%;
+}
